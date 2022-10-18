@@ -1,0 +1,233 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div#general {
+    position: absolute;
+    align-items: flex-end;
+    margin-left: 0px;
+    width: 1690px;
+    height: 750px;
+    background-color: white;
+}
+
+#contenedor {
+    /* border: solid 1px rgb(61, 48, 73); */
+    width: auto;
+}
+
+table {
+    /* color: black; */
+    width: auto;
+    font-size: 25px;
+    /* border-collapse: collapse; */
+    margin-top: 50;
+
+    /* border-collapse: separate; */
+    border-spacing: 1px;
+    border: solid black 2px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    padding: 5px;
+    -webkit-border-radius: 10px;
+}
+
+thead {
+    background: #ffb87e;
+    border-bottom: solid 5px #0F3620;
+    height: 0px;
+}
+
+th,
+td {
+    border: solid 1px black;
+    overflow: hidden;
+}
+
+th {
+    padding: 20px 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+td {
+    padding: 15px;
+    border: solid 1px rgb(196, 73, 190);
+}
+
+table td:first-child {
+    width: 100%x;
+    text-align: center;
+}
+
+table td:nth-child(2) {
+    width: 500px;
+    text-align: justify;
+}
+
+table td:nth-child(4) {
+    width: 100%x;
+    text-align: center;
+}
+
+table td:last-child {
+    width: 20px;
+    max-width: max-content;
+    align-items: center;
+    /* text-align: center; */
+}
+
+tr:nth-child(even) {
+    background-color: #ddd;
+}
+
+tbody tr {
+    cursor: pointer;
+}
+
+tbody tr:hover {
+    background: #369681;
+    color: white;
+}
+
+div#icon_reg {
+    position: relative;
+    margin: -25px 0 0 -25px;
+    left: 400;
+    top: 3px;
+    width: 75px;
+    height: 75px;
+    background-size: 100% 100%;
+    background-image: url(../Img/icon_mensaje.png);
+}
+
+textarea {
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: justify;
+}       
+
+#fcampos {
+    margin-top: 0px;
+    margin-left: 10px;
+    width: 390px;
+    height: 380px;
+}
+
+#centrar_btn1 {
+    margin-left: 5em;
+}
+
+fieldset {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 20px;
+    /* width: 0px; */
+    border-radius: 1.2em;
+    background-color: #ffb87e;
+}
+
+div#form_datos {
+    margin-top: 20px;
+    margin-left: 10px;
+    border-radius: 1.2em;
+    background-color: white;
+    border-color: black;
+    color: black;
+}
+
+#btnSave {
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 23px;
+    width: 240px;
+    height: 50px;
+    background: rgb(134, 31, 157);
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+
+legend {
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: blue;
+}
+
+label {
+    font-size: 25px;
+    margin-left: 10px;
+    font-weight: bold;
+
+}
+
+input {
+    margin-left: 10px;
+    font-size: 1.3rem;
+    padding: .8em 1em;
+    width: 300px;
+}
+
+div#body {
+    margin-top: 50px;
+    margin-left: 450px;
+    /* max-width: 900; */
+    /* width: auto; */
+    height: 470px;
+    border-radius: 1em;
+    background-color: 1px rgb(61, 48, 73);
+}
+
+#volver {
+    position: absolute;
+    top: 3px;
+    width: 100px;
+    height: 47px;
+    float: right;
+    left: 450px;
+    align-items: center;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    background-size: 100% 100%;
+    background-image: url(../Img/btn_inicio.png);
+}
+
+#btn_Borrar {
+    height: 80px;
+    width: 80px;
+    border: none;
+    Background-color: transparent;
+    background-image: url(../Img/delete4.png);
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+#btn_editar {
+    background-color: #d0f557;
+    height: 60px;
+    width: 70px;
+    border: none;
+    Background-color: transparent;
+    background-image: url(../Img/Bton_Editar2.png);
+    background-size: 100% 100%;
+    align-items: center;
+    cursor: pointer;
+}
+
+input[type=checkbox] {
+    /* Doble-tamaño Checkboxes */
+    width: 50px;
+    -ms-transform: scale(3);
+    -moz-transform: scale(3);
+    -webkit-transform: scale(3);
+    -o-transform: scale(3);
+    padding: 10px;
+}

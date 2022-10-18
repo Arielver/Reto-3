@@ -1,0 +1,25 @@
+#ubica_botones {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 670px;
+}
+
+#botons{
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+    cursor: pointer;
+    width: 700px;
+    height: 50px;
+    background: dodgerblue;
+    border-radius: 6px;
+}
+
+#fuente {
+    font-size: 75px;
+    color: blue;
+    text-align: center;
+}

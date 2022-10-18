@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="../Img/Categoria.png" />
+    <link rel="stylesheet" type="text/css" href="../Css/myStyleCategory.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="../Script/categoria.js"></script>
+
+    <title>Categoría</title>
+</head>
+
+<body>
+    <div id="general">
+        <div id="form_datos">
+            <fieldset>
+                <legend>Crear de Categoria</legend>
+                <div id="icon_reg"></div>
+                <form id="fcampos">
+                    <br> <label>NAME</label>
+                    <br><input type="text" id="nameCategory" placeholder="name category">
+                    <br><label>DESCRIPTION</label>
+                    <br><input type="text" id="descriptionCategory" placeholder="description categoyr">
+                    <div id="centrar_btnSave"><button id="btnSave" onclick="btnSaveUpdate()">Guardar categoria</button></div>
+                </form>
+            </fieldset>
+        </div>
+        
+        <div> <button id="volver" onClick="location.href='../index.html'"></button></div>
+        
+        <div id="body">
+            <div id="contenedor">
+                <table class="table" id="tbcategory">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>NAME</th>
+                            <th>DESCRIPTION</th>
+                            <th>EDIT</th>
+                            <th>
+                                <button id="btn_Borrar" title="Clic para eliminar" onclick="deleteCategoryAll()"></button>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="5">Cargando...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

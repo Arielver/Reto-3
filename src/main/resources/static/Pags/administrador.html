@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="../Img/admin.png" />
+    <link rel="stylesheet" type="text/css" href="../Css/myStyleAudience.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="../Script/auditorio.js"></script>
+
+    <title>Administrador</title>
+</head>
+
+<body>
+    <div id="general">
+        <div id="form_datos">
+            <fieldset>
+                <legend>Crear de Auditorio</legend>
+                <div id="icon_reg"></div>
+                <form id="fcampos">
+                    <br> <label>Owner</label>
+                    <br><input type="text" id="ownerAudience" placeholder="Owner audiencie">
+                    <br><label>Capacity</label>
+                    <br><input type="text" id="capacityAudience" placeholder="Capacity audiencie">
+                    <br><label>Categoy_id</label>
+                    <br><input type="number" id="categoy_idAudience" placeholder="Category_id audiencie">
+                    <br><label>Name</label>
+                    <br><input type="text" id="nameAudience" placeholder="Name audiencie">
+                    <div id="centrar_btnSave"><button id="btnSave" onclick="btnSaveUpdate()">Guardar auditorio</button></div>
+                </form>
+            </fieldset>
+        </div>
+        
+        <div> <button id="volver" onClick="location.href='../index.html'"></button></div>
+        
+        <div id="body">
+            <div id="contenedor">
+                <table class="table" id="tbclient">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>OWNER</th>
+                            <th>CAPACITY</th>
+                            <th>CATEGORY_ID</th>
+                            <th>NAME</th>
+                            <th>EDIT</th>
+                            <th>
+                                <button id="btn_Borrar" title="Clic para eliminar" onclick="deleteAudiencieAll()"></button>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="7">Cargando...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

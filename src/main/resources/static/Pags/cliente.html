@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="../Img/icono_cliente.png" />
+    <link rel="stylesheet" type="text/css" href="../Css/myStyleClient.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="../Script/cliente.js"></script>
+
+    <title>Cliente</title>
+</head>
+
+<body>
+    <div id="general">
+        <div id="form_datos">
+            <fieldset>
+                <legend>Registro de clientes</legend>
+                <div id="icon_reg"></div>
+                <form id="fcampos">
+                    <br> <label>Nombre</label>
+                    <br><input type="text" id="nameClient" placeholder="Nombre cliente">
+                    <br><label>Email</label>
+                    <br><input type="email" id="emailClient" placeholder="Email cliente">
+                    <br><label>Edad</label>
+                    <br><input type="number" id="ageClient" placeholder="Edad cliente">
+                    <div id="centrar_btn1"><button id="btnSave" onclick="btnSaveUpdate()">Guardar cliente</button></div>
+                </form>
+            </fieldset>
+        </div>
+        <div> <button id="volver" onClick="location.href='../index.html'"></button></div>
+        <div id="body">
+            <div id="contenedor">
+                <table class="table" id="tbclient">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>NAME</th>
+                            <th>EMAIL</th>
+                            <th>AGE</th>
+                            <th>EDIT</th>
+                            <th><button id="btn_Borrar" title="Clic para eliminar" onclick="deleteClientAll()"></button></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- <tr>
+                            <td>1</td>
+                            <td>pedro</td>
+                            <td>pedro@usa.edu.co</td>
+                            <td>15</td>
+                            <td></td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>maria</td>
+                            <td>maria@usa.edu.co</td>
+                            <td>16</td>
+                            <td></td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>alxandra</td>
+                            <td>alexandra@usa.edu.co</td>
+                            <td>17</td>
+                            <td></td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>mario</td>
+                            <td>mario@usa.edu.co</td>
+                            <td>19</td>
+                            <td></td>
+                            <td>1</td>
+                        </tr> -->
+                        <tr>
+                            <td colspan="6">Cargando...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

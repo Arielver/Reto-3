@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="../Img/icon_mensaje.png" />
+    <link rel="stylesheet" type="text/css" href="../Css/myStyleMessage.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="../Script/mensaje.js"></script>
+
+    <title>Mensaje</title>
+</head>
+
+<body>
+    <div id="general">
+        <div id="form_datos">
+            <fieldset>
+                <legend>Registro de mensajes</legend>
+                <div id="icon_reg"></div>
+                <form id="fcampos">
+                    <br> <label>Mensaje de texto</label>
+                    <textarea id="messageText" placeholder="Escriba un texto aquí..." rows="8" cols="32"></textarea>
+                    <div id="centrar_btn1"><button id="btnSave" onclick="btnSaveUpdate()">Guardar mensaje</button></div>
+                </form>
+            </fieldset>
+        </div>
+        <div> <button id="volver" onClick="location.href='../index.html'"></button></div>
+        <div id="body">
+            <div id="contenedor">
+                <table class="table" id="tbclient">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>MESSAGE TEXT</th>
+                            <th>EDIT</th>
+                            <th><button id="btn_Borrar" title="Clic para eliminar" onclick="deleteMessageAll()"></button></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="4">Cargando...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
